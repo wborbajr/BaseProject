@@ -4,7 +4,7 @@ Base Project to work with Docker, NginX, Python, MongoDB
 # Schema
 ![alt text](https://github.com/wborbajr/BaseProject/blob/master/schema/Docker.png)
 
-# Base (bildbase)
+# Base (buildbase)
 It is an alpine Linux 3.9, configures with time zone and locale. All extras files are removed, providen a light base image.
 
 # Database
