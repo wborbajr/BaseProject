@@ -1,0 +1,16 @@
+version: "3"
+services:
+  buildbase: #docker build . -t bplus:buildbase
+    container_name: buildbase
+    image: bplus/buildbase:1.0.0
+    build:
+      context: ./Base
+  database: #docker build . -t bplus:database
+    container_name: database
+    image: bplus/database:1.0.0
+    build:
+      context: ./Database
+    volumes:
+      - ./data:/data/db
+    ports:
+      - 27017:27017
