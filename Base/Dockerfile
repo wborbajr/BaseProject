@@ -36,7 +36,8 @@ RUN set -x \
     && rm -rf /usr/share/zoneinfo/Pacific  \
     && rm -rf /usr/share/zoneinfo/Chile  \
     && rm -rf /usr/share/zoneinfo/Canada \   
-    && rm -rf /var/cache/apk/*
+    && rm -rf /var/cache/apk/* \
+    && rm -rf /tmp/*
 
 # Iterate through all locale and install it
 # Note that locale -a is not available in alpine linux, use `/usr/glibc-compat/bin/locale -a` instead
